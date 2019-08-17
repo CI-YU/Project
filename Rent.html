@@ -21,7 +21,7 @@
     <script src="/scripts/main.js"></script>
 </head>
 
-<body id="body" class="show">
+<body id="body">
     <div class="wrap">
         <div class="row">
             <nav id="main-nav" class="navbar navbar-expand-sm navbar-dark fixed-top"
@@ -111,7 +111,8 @@
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <div class="item">
-                                <img src="https://picsum.photos/320/400?random=1" alt="" class="img-fluid">
+                                <img src="https://picsum.photos/320/400?random=1" alt="" class="img-fluid"
+                                    onclick="ShowInfo(01)">
                                 <h3 class="title">Title</h3>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum aliquam beatae
                                     quisquam, perspiciatis doloribus sapiente ad exercitationem consequatur? Corrupti,
@@ -120,7 +121,8 @@
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="item">
-                                <img src="https://picsum.photos/320/400?random=1" alt="" class="img-fluid">
+                                <img src="https://picsum.photos/320/400?random=1" alt="" class="img-fluid"
+                                    onclick="ShowInfo(02)">
                                 <h3 class="title">Title</h3>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum aliquam beatae
                                     quisquam, perspiciatis doloribus sapiente ad exercitationem consequatur? Corrupti,
@@ -129,7 +131,8 @@
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="item">
-                                <img src="https://picsum.photos/320/400?random=1" alt="" class="img-fluid">
+                                <img src="https://picsum.photos/320/400?random=1" alt="" class="img-fluid"
+                                    onclick="ShowInfo(03)">
                                 <h3 class="title">Title</h3>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum aliquam beatae
                                     quisquam, perspiciatis doloribus sapiente ad exercitationem consequatur? Corrupti,
@@ -146,7 +149,17 @@
         </footer>
     </div>
 
-
+    <div class="showProduct" style="display: none">
+        <div class="full-screen">
+            <button type="button" class="close" aria-label="Close" onclick="close()">
+                <!-- <span aria-hidden="true">&times;</span> -->
+                &times;
+            </button>
+            <button onclick="close()">55688</button>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perferendis eos nisi quos officia beatae est
+            odio recusandae. Pariatur cumque est doloremque minus! Recusandae eaque nisi quod, accusantium maxime cum.
+        </div>
+    </div>
 </body>
 
 </html>
